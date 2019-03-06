@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": ["prettier", "react", "import"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "singleQuote": true,
+        "printWidth": 100
+      }
+    ]
+  }
+}
