@@ -7,6 +7,6 @@ it('renders correctly', () => {
   const wrapper = shallow(<AppRouter />);
 
   expect(wrapper.exists()).toBe(true);
-  expect(wrapper.find('ul>li')).toHaveLength(5);
+  expect(wrapper.find('ul>li')).toHaveLength(2);
   expect(wrapper).toMatchSnapshot();
 });
