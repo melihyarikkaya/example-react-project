@@ -20,6 +20,8 @@ This project usings:
 - eslint-plugin-prettier
 - flow-bin
 - prettier
+- redux-mock-store
+- sinon
 
 [Prettier Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) `vscode extension must be installed.`
 
@@ -27,4 +29,14 @@ This project usings:
 
 ```
 yarn install
+yarn start
+```
+
+## Test & Coverage
+
+```
+yarn coverage
+yarn test
+//or
+yarn test:windows
 ```

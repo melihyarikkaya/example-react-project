@@ -15,8 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:windows": "set CI=true && react-scripts test",
+    "test": "react-scripts test --verbose",
+    "test:windows": "set CI=true && react-scripts test --verbose",
     "eject": "react-scripts eject",
     "lint:eslint": "eslint .",
     "flow": "flow",
@@ -37,7 +37,9 @@
     "enzyme-to-json": "^3.3.5",
     "eslint-plugin-prettier": "^3.0.1",
     "flow-bin": "^0.94.0",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "redux-mock-store": "^1.5.3",
+    "sinon": "^7.2.7"
   },
   "jest": {
     "snapshotSerializers": [

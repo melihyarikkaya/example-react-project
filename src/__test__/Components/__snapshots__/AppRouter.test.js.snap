@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`AppRouter Component Snapshot should match last snapshot 1`] = `
 <BrowserRouter>
   <div>
     <ul>

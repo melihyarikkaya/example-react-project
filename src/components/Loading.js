@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
 
-export default class Loading extends Component {
-  componentDidMount() {
-    this.intervalId = setInterval(() => {
-      this._setIsloading();
-    }, 1000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.intervalId);
-  }
-
-  _setIsloading() {
+class Loading extends Component {
+  _setIsloading = () => {
     this.props.setIsloading(!this.props.isLoading);
-  }
+  };
 
   render() {
     return (
       <div>
-        <h3>Loading State = {this.props.isLoading ? 'TRUE' : 'FALSE'}</h3>
+        <h3>
+          isLoading State = <span className="state">{this.props.isLoading ? 'TRUE' : 'FALSE'}</span>
+        </h3>
+        <br />
+        <button onClick={this._setIsloading}>
+          Set isLoading to {!this.props.isLoading ? 'TRUE' : 'FALSE'}
+        </button>
       </div>
     );
   }
 }
+
+export default Loading;

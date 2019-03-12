@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When Loading component rendered it should match last snapshot 1`] = `
+<div>
+  <h3>
+    isLoading State = 
+    <span
+      className="state"
+    >
+      FALSE
+    </span>
+  </h3>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Set isLoading to 
+    TRUE
+  </button>
+</div>
+`;

@@ -3,8 +3,11 @@ import { shallow } from 'enzyme';
 
 import App from '../../components/App';
 
-it('renders correctly', () => {
-  const wrapper = shallow(<App />);
-
-  expect(wrapper).toMatchSnapshot();
+describe('App Component', () => {
+  describe('Snapshot', () => {
+    it('should match last snapshot', () => {
+      const wrapper = shallow(<App />);
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
 });

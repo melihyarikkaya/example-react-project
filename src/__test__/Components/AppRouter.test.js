@@ -3,10 +3,20 @@ import { shallow } from 'enzyme';
 
 import AppRouter from '../../components/AppRouter';
 
-it('renders correctly', () => {
-  const wrapper = shallow(<AppRouter />);
-
-  expect(wrapper.exists()).toBe(true);
-  expect(wrapper.find('ul>li')).toHaveLength(2);
-  expect(wrapper).toMatchSnapshot();
+describe('AppRouter Component', () => {
+  describe('Snapshot', () => {
+    let wrapper = null;
+    beforeEach(() => {
+      wrapper = shallow(<AppRouter />);
+    });
+    afterEach(() => {
+      wrapper = null;
+    });
+    it('should match last snapshot', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+    it('should have two <li> tag in <ul> tag', () => {
+      expect(wrapper.find('ul>li')).toHaveLength(2);
+    });
+  });
 });
